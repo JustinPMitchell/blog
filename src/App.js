@@ -22,9 +22,7 @@ class Author extends Component {
   render() {
     return (
       <div>
-        <p>Written by {this.props.authors[0]}</p>
-        <p>Written by {this.props.authors[1]}</p>
-        <p>Written by {this.props.authors[2]}</p>
+        {this.props.authors.map( things => <p>Written by {things}</p>)}
       </div>
     );
   }
