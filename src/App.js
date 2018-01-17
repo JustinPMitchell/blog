@@ -5,13 +5,26 @@ import './App.css';
 
 class Post extends Component {
   render() {
+    var authors = <Author authors={this.props.allAuthors}/>;
     return (
       <div>
         <h1>{this.props.title}</h1>
-        <p>by {this.props.author}</p>
+        {authors}
         <p>{this.props.body}</p>
         <h2>Comments:</h2>
-        <p>{this.props.comments[0]}</p>
+          <p>{this.props.comments[0]}</p>
+      </div>
+    );
+  }
+}
+
+class Author extends Component {
+  render() {
+    return (
+      <div>
+        <p>Written by {this.props.authors[0]}</p>
+        <p>Written by {this.props.authors[1]}</p>
+        <p>Written by {this.props.authors[2]}</p>
       </div>
     );
   }
