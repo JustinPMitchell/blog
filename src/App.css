@@ -26,3 +26,54 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.nav-bar {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 3% 0;
+  padding: 2%;
+  text-align: left;
+}
+
+.nav-item {
+  margin: 2%;
+  padding: 2% 2%;
+  color: black;
+}
+
+.nav-item:link {
+    text-decoration: none;
+}
+
+.nav-item:visited {
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background: pink;
+    border-radius: 50%;
+}
+
+.nav-logo {
+  margin: 2%;
+  padding: 1% 2%;
+  color: black;
+  font-size: 30px;
+}
+
+.nav-logo:link {
+    text-decoration: none;
+}
+
+.nav-logo:visited {
+    text-decoration: none;
+}
+
+.nav-logo:hover {
+    background: pink;
+    border-radius: 50%;
+}
+
+.profile-pic {
+  width: 20%;
+}
